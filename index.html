@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Time</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1>Current Time</h1>
+        <div id="curr-time"></div>
+        <div class="new-alarm">
+            <div class="new">New Alarm</div>
+            <div class="form-alarm">
+                <form>
+                    <div class="inputs">
+                        <input type="number" name="hour" min="0" max="12" placeholder="Enter-Hour">
+                        <input type="number" name="min" min="0" max="60" placeholder="Enter-Minute">
+                        <input type="number" name="sec" min="0" max="60" placeholder="Enter-Second">
+                        <select name="period">
+                            <option value="" selected disabled>period</option>
+                            <option value="AM">AM</option>
+                            <option value="PM">PM</option>
+                        </select>
+                    </div>
+                    <button>Alarm</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="active-alarm">
+        <div id="alarm-text"></div>
+        <button id="reset-alarm">Clear Alarm</button>
+    </div>
+    <audio id="alarm-audio"></audio>
+    <script src="script.js"></script>
+</body>
+
+</html>
